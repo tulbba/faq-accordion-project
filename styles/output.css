@@ -1,0 +1,71 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 3rem;
+  padding: 0;
+  background-image: linear-gradient(#af67e9, #6565e7);
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  max-width: 57rem;
+  border-radius: 2rem;
+}
+
+.card__text h1 {
+  font-size: 1.8rem;
+}
+
+.card__image img {
+  width: 100%;
+  height: auto;
+  max-width: 25rem;
+}
+
+.accordion button {
+  background-color: transparent;
+  border: none;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #1d1e35;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.accordion button:hover {
+  color: #f47c57;
+}
+.accordion .accordion__content {
+  display: block;
+}
+
+@media (min-width: 62.5rem) {
+  .card {
+    display: flex;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -24.5rem -4.9rem;
+    background-size: 80%;
+    margin: 8rem auto;
+  }
+
+  .card__image, .card__text {
+    flex: 1;
+  }
+
+  .card__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card__image img {
+    transform: translateX(-4rem);
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
