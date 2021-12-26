@@ -42,4 +42,4 @@ Flexboxs and grids aren't very familiar to me yet, also JS isn't my strongest po
 
 ## Acknowledgments
 
-- I got a lot of help from a YouTuber named Coder Coder. I had already started this challenge but then got a bit stuck and I happened to find her video, where she was also completing the same challenge. I got really good tips from her
+- I got a lot of help from a YouTuber named [Coder Coder](https://www.youtube.com/c/TheCoderCoder). I had already started this challenge but then got a bit stuck and I happened to find her video, where she was also completing the same challenge. I got really good tips from her
