@@ -1,3 +1,5 @@
+// Asus Vivobook 1280x569 px
+
 $violet: hsl(273, 75%, 66%);
 $blue: hsl(240, 73%, 65%);
 $verydarkdb: hsl(238, 29%, 16%);
@@ -7,79 +9,213 @@ $hover: hsl(14, 88%, 65%);
 $divider: hsl(240, 5%, 91%);
 
 body {
-    font-family: 'Kumbh Sans',sans-serif;
-    margin: 3rem;
-    padding: 0;
-    background-image: linear-gradient($violet, $blue);
-    background-attachment: fixed;
+  padding: 0;
+  background-image: linear-gradient($violet, $blue);
+  background-attachment: fixed;
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100%;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.card {
+@media (min-width: 360px) {
+  .card {
     background-color: white;
-    max-width: 57rem;
-    border-radius: 2rem;
-}
+    max-width: 55rem;
+    border-radius: 1.5rem;
+    font-family: "Kumbh Sans", sans-serif;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35rem;
+    width: 20rem;
+    box-shadow: 0 30px 30px -2px hsla(249, 66%, 52%, 0.822);
+  }
 
-.card__text h1 {
-    font-size: 1.8rem;
-}
+  .woman__desktop {
+    display: none;
+  }
 
-.card__image img {
+  .accordion__question {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: 400;
+      color: $verydarkdb;
+      font-size: 0.8rem;
+    }
+  }
+
+  .card__text {
+    position: relative;
+    bottom: 4rem;
+    margin: 0.9rem;
+  }
+
+  .accordion__question > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .accordion__question h2:hover {
+    color: $hover;
+    cursor: pointer;
+  }
+
+  .accordion__question.is-active {
+    h2 {
+      font-weight: 700;
+      color: $verydarkdb;
+    }
+  }
+
+  .is-active .accordion__toggle {
+    transform: rotate(180deg);
+  }
+  .is-active .accordion__toggle::before {
+    display: none;
+  }
+
+  .accordion__content {
+    display: none;
+  }
+
+  .accordion__content p {
+    font-size: 0.75rem;
+    color: $darkgb;
+    padding-left: 0.5rem;
+  }
+  .accordion__content.is-active {
+    display: block;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .card__image {
     width: 100%;
     height: auto;
     max-width: 25rem;
+    text-align: center;
+
+    .woman__mobile {
+      width: 14.75rem;
+      position: relative;
+      bottom: 6.8rem;
+      filter: drop-shadow(0 8mm 0.2mm hsla(240, 73%, 65%, 0.123));
+    }
+  }
+
+  hr {
+    border-top: $divider;
+    color: $divider;
+  }
+
+  .box {
+    display: none;
+  }
 }
 
-.accordion {
-
-    button {
-        background-color: transparent;
-        border: none;
-        font-family: 'Kumbh Sans',sans-serif;
-        color: $verydarkdb;
-        font-size: 0.9rem;
-        cursor: pointer;
-    }
-
-    button:hover {
-        color: $hover;
-    }
-
-    .accordion__content {
-        display: block;
-    }
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 0.7rem;
 }
 
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*           */
+/*  DESKTOP  */
+/*           */
 
 @media (min-width: 62.5rem) {
-    .card {
-        display: flex;
-        background-image: url('/images/bg-pattern-desktop.svg');
-        background-repeat: no-repeat;
-        background-position: -24.5rem -4.9rem;
-        background-size: 80%;
-        margin: 8rem auto;
-    }
+  .woman__mobile {
+    display: none;
+  }
 
-    .card__image, .card__text {
-        flex: 1;
-    }
+  .woman__desktop {
+    display: block;
+  }
 
-    .card__image {
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-    }
+  .card {
+    top: 50%;
+    display: flex;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -28.9rem -13rem;
+    background-size: 90%;
+    height: 29rem;
+    width: 57rem;
+    box-shadow: 0 30px 30px -2px hsla(249, 66%, 52%, 0.822);
+  }
+  .card__image,
+  .card__text {
+    flex: 1;
 
-    .card__image img {
-        transform: translateX(-4rem);
-
+    h1 {
+      text-align: left;
+      padding-left: 0.5rem;
+      font-size: 1.625rem;
     }
+  }
+
+  .card__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card__image {
+    .woman__desktop {
+      transform: translateX(-3.8rem);
+      width: 24.3rem;
+    }
+  }
+
+  .box {
+    display: block;
+    position: absolute;
+    left: 0.3%;
+    top: 42.8%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 10rem;
+  }
+
+  .card__text {
+    margin: 3rem;
+    top: 0.1rem;
+  }
+
+  .accordion {
+    width: 20rem;
+  }
+
+  .accordion__question h2 {
+    font-size: 0.8rem;
+    color: $verydarkdb;
+  }
+
+  hr {
+    border-top: $divider;
+    color: $divider;
+  }
 }
-
