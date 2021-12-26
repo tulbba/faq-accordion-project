@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Built with
 
-- HTML5/
+- HTML5
 - SCSS
 - JavaScript/jQuery
 
