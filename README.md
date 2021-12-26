@@ -14,13 +14,13 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop](./images/faq_accordion_desktop.png)
-[Mobile](./images/faq_accordion_mobile.png)
+- [Desktop](./images/faq_accordion_desktop.png)
+- [Mobile](./images/faq_accordion_mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/faq-accordion-QgH_w6DlF)
+- [Live Site URL](https://faq-accordion-project.vercel.app/)
 
 ## My process
 
@@ -42,4 +42,4 @@ Flexboxs and grids aren't very familiar to me yet, also JS isn't my strongest po
 
 ## Acknowledgments
 
-- I got a lot of help from a YouTuber named [Coder Coder](https://www.youtube.com/c/TheCoderCoder). I had already started this challenge but then got a bit stuck and I happened to find her video, where she was also completing the same challenge. I got really good tips from her
+- I got a lot of help from a YouTuber named [Coder Coder](https://www.youtube.com/c/TheCoderCoder). I had already started this challenge but then got a bit stuck and I happened to find her video, where she was also completing the same challenge. I got really good tips from her.
